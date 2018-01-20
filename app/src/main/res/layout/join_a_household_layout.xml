@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_full"
+    android:id="@+id/join_household_rlayout">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            style="@style/layout_vertical"
+            android:layout_weight="2"
+            android:id="@+id/imageView2"
+            android:src="@drawable/billtrack_logo"
+            android:layout_margin="10dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Join a household"
+            android:textStyle="bold"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_margin="10dp"        />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            style="@style/layout_vertical"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                style="@style/layout_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Household Name"
+                android:textStyle="bold"
+                android:id="@+id/first_name_textview" />
+
+            <EditText
+                style="@style/layout_horizontal"
+                android:layout_weight="3"
+                android:id="@+id/joinHouseholdNameEV"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <Button
+            style="@style/layout_vertical"
+            android:text="Join"
+            android:id="@+id/joinHouseholdButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

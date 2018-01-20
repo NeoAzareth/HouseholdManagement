@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/layout_full">
+
+    <TextView
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pending members"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/pendingTextView"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp" />
+
+    <View
+        style="@style/style_record_horizontal_separator"
+        android:id="@+id/record_horizontal_separator_one"
+        />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/layout_vertical"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <View
+            style="@style/style_record_vertical_separator"
+            android:id="@+id/record_vertical_separator_one"
+            />
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:id="@+id/user_textview"
+            android:text="User"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:background="#DDA0DD"
+            android:textStyle="bold"/>
+
+        <View
+            style="@style/style_record_vertical_separator"
+            android:id="@+id/record_vertical_separator_two"
+            />
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:id="@+id/email_textview"
+            android:text="Email"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:background="#DDA0DD"
+            android:textStyle="bold"/>
+
+
+        <View
+            style="@style/style_record_vertical_separator"
+            android:id="@+id/record_vertical_separator_three"
+            />
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:id="@+id/approve_textview"
+            android:text="Approve"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:background="#DDA0DD"
+            android:textStyle="bold"/>
+
+        <View
+            style="@style/style_record_vertical_separator"
+            android:id="@+id/record_vertical_separator_four"
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/style_record_horizontal_separator"
+        android:id="@+id/record_horizontal_separator_two"
+        />
+
+    <ListView
+            android:id="@+id/add_member_listview"
+            style="@style/layout_vertical"
+            android:layout_weight="7" >
+    </ListView>
+
+</LinearLayout>

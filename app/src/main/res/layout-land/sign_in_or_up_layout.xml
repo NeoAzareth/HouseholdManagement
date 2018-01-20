@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_layout">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        style="@style/layout_full"
+        >
+
+        <ImageView
+            style="@style/layout_vertical"
+            android:layout_weight="2"
+            android:id="@+id/logo_image"
+            android:src="@drawable/billtrack_logo"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:id="@+id/email_textfield"
+            android:hint="Email"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password_textfield"
+            android:hint="Password"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:text="Remember email."
+            android:textStyle="italic"
+            android:checked="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/rememberEmailCheckBox"/>
+
+        <Button
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:text="Sign In"
+            android:id="@+id/sign_in_button"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            style="@style/layout_vertical"
+            android:layout_weight="0.5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:text="New User? Sign Up"
+            android:id="@+id/sign_up"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:clickable="true"/>
+
+        <TextView
+            style="@style/layout_vertical"
+            android:layout_weight="0.5"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="Forgot Password...? Reset it here."
+            android:id="@+id/passResetTV"
+            android:textStyle="italic"
+            android:layout_margin="10dp"
+            android:clickable="true"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

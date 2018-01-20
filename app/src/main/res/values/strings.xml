@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">BillTrack</string>
+
+    <!--menu-->
+    <string name="overview_menu_item">Overview</string>
+    <string name="manage_bills_menu_item">Manage Bills</string>
+    <string name="report_menu_item">Report</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="admin_menu_item">Admin</string>
+    <string name="instruction_menu_item">Instruction</string>
+    <string name="log_out_menu_item">Log Out</string>
+
+    <!-- overview table-->
+    <string name="description_label">Description</string>
+    <string name="amount_label">Amount</string>
+    <string name="category_label">Category</string>
+    <string name="full_name_label">Name</string>
+    <string name="user_level_label">Level</string>
+    <string name="user_status_label">Status</string>
+    <string name="submitButton">Submit</string>
+    <string name="goBackButton">Go Back</string>
+    <string name="currentPassword" />
+    <string name="newPassword" />
+    <string name="conNewPassword" />
+    <string name="changePassword">Change Your Password</string>
+    <string name="confirmDeletePassword" />
+    <string name="confirmButton">Confirm</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="deleteLargeText" />
+    <string name="deleteMediumText" />
+
+
+
+
+    <!--category spinner-->
+    <string-array name="categoryarr">
+        <item>Food</item>
+        <item>Utility</item>
+        <item>Maintenance</item>
+        <item>Other</item>
+    </string-array>
+
+    <!--member spinner-->
+    <string-array name="memberArr">
+        <item>All</item>
+    </string-array>
+
+    <!--all category spinner-->
+    <string-array name="allCategoryArr">
+        <item>All</item>
+        <item>Food</item>
+        <item>Utility</item>
+        <item>Maintenance</item>
+        <item>Other</item>
+    </string-array>
+
+    <!--month spinner-->
+    <string-array name="monthArr">
+        <item></item>
+    </string-array>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_full"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/layout_vertical"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+        <View
+            style="@style/style_record_vertical_separator"
+            android:id="@+id/record_vertical_separator_one"
+            />
+
+        <TextView
+            android:id="@+id/fullname_textview"
+            style="@style/layout_horizontal"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Full Name"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <View
+            style="@style/style_record_vertical_separator"
+            android:id="@+id/record_vertical_separator_two"
+            />
+
+        <TextView
+            android:id="@+id/emailTextView"
+            style="@style/layout_horizontal"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Email"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <View
+            style="@style/style_record_vertical_separator"
+            android:id="@+id/record_vertical_separator_three"
+            />
+
+        <TextView
+            android:id="@+id/status_textview"
+            style="@style/layout_horizontal"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Status"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <View
+            style="@style/style_record_vertical_separator"
+            android:id="@+id/record_vertical_separator_four"
+            />
+
+        <Button
+            android:id="@+id/actionButton"
+            style="@style/layout_horizontal"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Reset"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"/>
+
+        <View
+            style="@style/style_record_vertical_separator"
+            android:id="@+id/record_vertical_separator_five"
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/style_record_horizontal_separator"
+        android:id="@+id/record_horizontal_separator_one"
+        />
+
+</LinearLayout>

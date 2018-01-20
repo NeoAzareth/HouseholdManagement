@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical"
+    style="@style/layout_full"
+    android:fillViewport="false">
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        tools:context=".view.OverviewActivity"
+        style="@style/layout_full">
+        >
+        <TextView
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Please select which bill to delete."
+            android:textStyle="bold"
+            android:id="@+id/textView1"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
+

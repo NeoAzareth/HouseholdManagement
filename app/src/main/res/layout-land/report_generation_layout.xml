@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/layout_full">
+
+    <!--By member-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        style="@style/layout_vertical"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="By member"
+            android:textStyle="bold"
+            android:id="@+id/first_name_textview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <Spinner
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:id="@+id/member_spinner"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:entries="@array/memberArr"
+            />
+    </LinearLayout>
+
+    <!--By category-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        style="@style/layout_vertical"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="By category"
+            android:textStyle="bold"
+            android:id="@+id/last_name_textview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <Spinner
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:id="@+id/category_spinner"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:entries="@array/allCategoryArr"
+            />
+    </LinearLayout>
+
+    <!--By month-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        style="@style/layout_vertical"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="By month"
+            android:textStyle="bold"
+            android:id="@+id/email_textview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <Spinner
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:id="@+id/month_spinner"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:entries="@array/monthArr"
+            />
+    </LinearLayout>
+
+    <Button
+        style="@style/layout_vertical"
+        android:text="GO"
+        android:id="@+id/go_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>

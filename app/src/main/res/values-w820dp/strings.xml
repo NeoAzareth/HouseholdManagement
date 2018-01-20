@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="submitButton">Submit</string>
+    <string name="goBackButton">Go Back</string>
+    <string name="currentPassword" />
+    <string name="newPassword" />
+    <string name="conNewPassword" />
+    <string name="changePassword">Change Your Password</string>
+
+    <string name="confirmDeletePassword" />
+    <string name="deleteLargeText" />
+    <string name="deleteMediumText" />
+
+</resources>

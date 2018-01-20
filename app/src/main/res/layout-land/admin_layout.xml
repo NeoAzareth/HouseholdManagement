@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_full"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.AdminActivity"
+    android:id="@+id/admin_layout">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        style="@style/layout_full">
+
+        <Button
+            style="@style/style_button_in_list"
+            android:id="@+id/manage_members_button"
+            android:background="@drawable/item_background"
+            android:text="Manage members" />
+
+        <TextView
+            style="@style/style_separator_in_list"
+            android:id="@+id/separator_one"/>
+
+        <Button
+            style="@style/style_button_in_list"
+            android:text="Change rent"
+            android:background="@drawable/item_background"
+            android:id="@+id/change_rent_button"
+            />
+
+        <TextView
+            style="@style/style_separator_in_list"
+            android:id="@+id/separator_two"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

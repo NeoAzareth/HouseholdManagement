@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/layout_full"
+    android:id="@+id/manage_member_layout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="How do you want to manage members?"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/textView2" />
+
+    <Button
+        style="@style/style_button_in_list"
+        android:id="@+id/add_members_button"
+        android:background="@drawable/item_background"
+        android:text="Add members" />
+
+    <TextView
+        style="@style/style_separator_in_list"
+        android:id="@+id/separator_one"/>
+
+    <Button
+        style="@style/style_button_in_list"
+        android:text="Delete members"
+        android:background="@drawable/item_background"
+        android:id="@+id/delete_members_button"
+        />
+
+    <TextView
+        style="@style/style_separator_in_list"
+        android:id="@+id/separator_two"/>
+
+    <Button
+        style="@style/style_button_in_list"
+        android:text="Reset members"
+        android:background="@drawable/item_background"
+        android:id="@+id/reset_members_button"
+        />
+
+    <TextView
+        style="@style/style_separator_in_list"
+        android:id="@+id/separator_three"/>
+</LinearLayout>

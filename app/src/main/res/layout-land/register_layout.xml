@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/layout_full">
+
+    <TextView
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Register New User. All fields are required."
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        />
+
+    <!--Firstname-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        style="@style/layout_vertical"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="First Name"
+            android:textStyle="bold"
+            android:id="@+id/first_name_textview" />
+
+        <EditText
+            style="@style/layout_horizontal"
+            android:layout_weight="3"
+            android:id="@+id/first_name_editview"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <!--Lastname-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        style="@style/layout_vertical"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Last Name"
+            android:textStyle="bold"
+            android:id="@+id/last_name_textview" />
+
+        <EditText
+            style="@style/layout_horizontal"
+            android:layout_weight="3"
+            android:id="@+id/last_name_editview"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <!--Email-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        style="@style/layout_vertical"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Email"
+            android:textStyle="bold"
+            android:id="@+id/email_textview" />
+
+        <EditText
+            style="@style/layout_horizontal"
+            android:layout_weight="3"
+            android:id="@+id/email_editview"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <!--Password-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        style="@style/layout_vertical"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Password"
+            android:textStyle="bold"
+            android:id="@+id/password_textview" />
+
+        <EditText
+            style="@style/layout_horizontal"
+            android:layout_weight="3"
+            android:id="@+id/password_editview"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <!--Confirm Password-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        style="@style/layout_vertical"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Confirm Password"
+            android:textStyle="bold"
+            android:id="@+id/confirm_password_textview" />
+
+        <EditText
+            style="@style/layout_horizontal"
+            android:layout_weight="3"
+            android:id="@+id/confirm_password_editview"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <Button
+        style="@style/layout_vertical"
+        android:text="Register"
+        android:id="@+id/register_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.householdmanagement">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/billtrack_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.SignInOrUpActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.RegisterActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".view.NewUserSelectionActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".view.CreateAHouseholdActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".view.JoinAHouseholdActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".view.OverviewActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".view.ManageBillActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".view.AddBillActivity"
+            android:label="Add Bill" />
+        <activity android:name=".view.DeleteBillActivity" />
+        <activity android:name=".view.EditBillListActivity" />
+        <activity android:name=".view.EditBillDetailActivity" />
+        <activity
+            android:name=".view.ReportGenerationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".view.ReportActivity">
+        </activity>
+        <activity android:name=".view.LeaveOrDeleteActivity" />
+        <activity android:name=".view.SettingsActivity" />
+        <activity android:name=".view.AdminActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity android:name=".view.ManageMemberActivity" />
+        <activity android:name=".view.AddMemberActivity" />
+        <activity android:name=".view.DeleteMemberActivity" />
+        <activity android:name=".view.UpdatePasswordActivity" />
+        <activity android:name=".view.ResetMemberActivity"></activity>
+
+        <receiver android:name=".controller.NotificationReceiver"/>
+        <receiver android:name=".controller.AutoStart">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".controller.AlarmService"/>
+    </application>
+
+</manifest>
