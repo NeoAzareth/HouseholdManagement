@@ -1,51 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    style="@style/layout_full">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_full"
+    android:id="@+id/new_user_selection_rlayout">
 
-    <ImageView
-        style="@style/layout_vertical"
-        android:layout_weight="2"
-        android:id="@+id/imageView"
-        android:src="@drawable/billtrack_logo"
-        android:layout_margin="10dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
-    <TextView
-        style="@style/layout_vertical"
-        android:layout_weight="1"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcome new user. \n What do you want to do next?"
-        android:gravity="center"
-        android:layout_margin="10dp"
-        android:id="@+id/selectActivityGreeting" />
+        <ImageView
+            style="@style/layout_vertical"
+            android:layout_weight="2"
+            android:id="@+id/imageView"
+            android:src="@drawable/billtrack_logo"
+            android:layout_margin="10dp" />
 
-    <Button
-        style="@style/layout_vertical"
-        android:layout_weight="1"
-        android:background="@drawable/item_background"
-        android:text="Create a household"
-        android:id="@+id/create_a_household_button"
-        android:gravity="center"
-        android:layout_marginLeft ="10dp"
-        android:layout_marginRight ="10dp"/>
+        <TextView
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Welcome new user. \n What do you want to do next?"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/selectActivityGreeting" />
 
-    <TextView
-        style="@style/style_separator_in_list"
-        android:id="@+id/separator_one"/>
+        <Button
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/item_background"
+            android:text="Create a household"
+            android:id="@+id/create_a_household_button"
+            android:gravity="center"
+            android:layout_marginLeft ="10dp"
+            android:layout_marginRight ="10dp"/>
 
-    <Button
-        style="@style/layout_vertical"
-        android:layout_weight="1"
-        android:background="@drawable/item_background"
-        android:text="Join a household"
-        android:id="@+id/join_a_household_button"
-        android:gravity="center"
-        android:layout_marginLeft ="10dp"
-        android:layout_marginRight ="10dp"/>
+        <TextView
+            style="@style/style_separator_in_list"
+            android:id="@+id/separator_one"/>
 
-    <TextView
-        style="@style/style_separator_in_list"
-        android:id="@+id/separator_two"/>
+        <Button
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/item_background"
+            android:text="Join a household"
+            android:id="@+id/join_a_household_button"
+            android:gravity="center"
+            android:layout_marginLeft ="10dp"
+            android:layout_marginRight ="10dp"/>
 
+        <TextView
+            style="@style/style_separator_in_list"
+            android:id="@+id/separator_two"/>
 
-</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

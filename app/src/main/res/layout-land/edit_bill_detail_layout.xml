@@ -1,70 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    style="@style/layout_full">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_full"
+    android:id="@+id/edit_bill_relative_layout">
 
-    <TextView
-        style="@style/layout_vertical"
-        android:layout_weight="0.5"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:gravity="center"
-        android:text="Description"
-        android:id="@+id/textView9"
-        android:textStyle="bold"
-        android:layout_margin="10dp"
-        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
-    <EditText
-        style="@style/layout_vertical"
-        android:layout_weight="1"
-        android:id="@+id/description_editText"
-        android:hint="20 words maximum"
-        android:layout_margin="10dp"
-        android:layout_gravity="center_horizontal" />
+        <TextView
+            style="@style/layout_vertical"
+            android:layout_weight="0.5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:text="Description"
+            android:id="@+id/textView9"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            />
 
-    <TextView
-        style="@style/layout_vertical"
-        android:layout_weight="0.5"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:gravity="center"
-        android:text="Amount"
-        android:id="@+id/textView10"
-        android:textStyle="bold"
-        android:layout_margin="10dp"
-        />
+        <EditText
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:id="@+id/editBillDescET"
+            android:hint="20 words maximum"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal" />
 
-    <EditText
-        style="@style/layout_vertical"
-        android:layout_weight="1"
-        android:id="@+id/amount_editText"
-        android:layout_margin="10dp"
-        android:layout_gravity="center_horizontal" />
+        <TextView
+            style="@style/layout_vertical"
+            android:layout_weight="0.5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:text="Amount"
+            android:id="@+id/textView10"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            />
 
-    <TextView
-        style="@style/layout_vertical"
-        android:layout_weight="0.5"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:gravity="center"
-        android:text="Category"
-        android:id="@+id/textView11"
-        android:textStyle="bold"
-        android:layout_margin="10dp"
-        />
+        <EditText
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:id="@+id/editBillAmountET"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal" />
 
-    <Spinner
-        style="@style/layout_vertical"
-        android:layout_weight="1"
-        android:id="@+id/category_spinner"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="10dp"
-        android:entries="@array/categoryarr"
-        />
+        <TextView
+            style="@style/layout_vertical"
+            android:layout_weight="0.5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:text="Category"
+            android:id="@+id/textView11"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            />
 
-    <Button
-        style="@style/layout_vertical"
-        android:layout_weight="1"
-        android:text="DONE"
-        android:id="@+id/edit_bill_finish_button"
-        android:layout_margin="10dp"
-        android:layout_gravity="center_horizontal" />
-</LinearLayout>
+        <Spinner
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:id="@+id/editBillCatSpinner"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:entries="@array/categoryarr"
+            />
+
+        <Button
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:text="DONE"
+            android:id="@+id/editBillActButton"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>
